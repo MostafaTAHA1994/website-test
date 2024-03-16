@@ -1,0 +1,51 @@
+/*MAIN TITLE*/
+body {
+    background-color: #454580;
+    color: white;
+    text-align: left;
+    font-size: larger;
+}
+
+/* SECOND TITLE*/
+h2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+p{
+   font-size: large;
+}
+
+/* Additional styling for form elements */
+form {
+    text-align: center;
+    font-size: large;
+}
+
+input[type="number"], select {
+    width: 200px;
+    padding: 10px;
+    border: black;
+    border-radius: 80px;
+    margin-bottom: 10px;
+    font-size: larger;
+}
+button {
+    padding: 10px 20px;
+    border: white;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue color for button */
+    color: white;
+    cursor: pointer;
+    font-size: larger;
+}
+button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+#result-container p {
+    margin-top: 80px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
+    font-size: 24px;
+}
