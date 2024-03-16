@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>Isentropic Relation Calculator</h1>
+    <p>This calculator is able to calculate the isentropic relation of the flow
+         In order for this calculator to wrok, Four flow parameters must be provided. Total pressure, static pressure
+         and total temperature.
+    </p>
+
+    <h2>From Ptot and Pstat</h2>
+    <form id="calculator-form">
+        <label for="Ptot">Total pressure:</label>
+        <input type="number" name="Ptot" id="Ptot" required><br><br>
+        
+        <label for="Pstat">Static pressure:</label>
+        <input type="number" name="Pstat" id="Pstat" required><br><br>
+
+
+        
+        <label for="gas">Choose gas:</label>
+        <select name="gas" id="gas">
+            <option value="Air">Air</option>
+            <option value="Nitrogen">Nitrogen</option>
+            <option value="Oxygen">Oxygen</option>
+            <option value="Carbon Dioxide">Carbon Dioxide</option>
+        </select><br><br>
+        
+        <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+    <div id="result-container"></div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
